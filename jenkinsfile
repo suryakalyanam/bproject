@@ -13,7 +13,7 @@ node('maven-label')
        echo 'Hello world'
        sayhello 'Dave'
     }
-    stage('Preparation') { 
+    stage('Preparation') {
       
       git 'https://github.com/suryakalyanam/bproject.git'
                 
