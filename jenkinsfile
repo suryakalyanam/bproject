@@ -1,6 +1,19 @@
-node('maven-label') {
-   def mvnHome
-   stage('Preparation') { 
+@library ('pipeline-library-demo')_
+def mymethod(string name='human'){
+    echo "Hello,${name}."
+    echo "Hello,${name}."
+    
+}
+node('maven-label')
+   def mvn home
+     stage('ref-lib'){
+    mymethod 'Intellipath'
+    }
+    stage('demo'){
+       echo 'Hello world'
+       sayhello 'Dave'
+    }
+    stage('Preparation') { 
       
       git 'https://github.com/suryakalyanam/bproject.git'
                 
