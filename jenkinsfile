@@ -4,7 +4,7 @@ def mymethod(string name='human'){
     echo "Hello,${name}."
     
 }
-node('maven-label')
+node('maven-label'){
    def mvn home
      stage('ref-lib'){
     mymethod 'Intellipath'
