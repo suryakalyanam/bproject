@@ -1,5 +1,7 @@
 @library ('pipeline-library-demo')_
-def mymethod(string name='human'){
+
+
+def mymethod(string name='human') {
     echo "Hello,${name}."
     echo "Hello,${name}."
     
@@ -8,6 +10,7 @@ node('maven-label'){
    def mvn home
      stage('ref-lib'){
     mymethod 'Intellipath'
+    sh "python /tmp/a.py" 
     }
     stage('demo'){
        echo 'Hello world'
